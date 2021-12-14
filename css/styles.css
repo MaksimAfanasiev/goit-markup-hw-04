@@ -167,7 +167,6 @@ button {
 
 .hero-box-overlay {
   max-width: 1600px;
-  height: 600px;
   margin-right: auto;
   margin-left: auto;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -240,12 +239,12 @@ button {
 }
 
 .feature-item-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
   background-color: var(--secondary-background-color);
-}
-
-.feature-item-icon {
-  display: block;
-  margin: auto;
 }
 
 /* Направления деятельности */
@@ -326,7 +325,9 @@ button {
 }
 
 .network-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -342,7 +343,6 @@ button {
   margin-right: 10px;
 }
 .network-icon {
-  margin: 12px;
   fill: currentColor;
 }
 
@@ -369,7 +369,9 @@ button {
 }
 
 .client-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
@@ -384,8 +386,6 @@ button {
 }
 .client-icon {
   fill: currentColor;
-  margin-left: 32px;
-  margin-right: 32px;
 }
 
 /* Футер */
@@ -397,6 +397,7 @@ button {
 
 .footer-content {
   display: flex;
+  align-items: baseline;
 }
 
 .logo-footer-word {
@@ -436,9 +437,7 @@ address {
 }
 
 .join-box {
-  display: block;
   margin-left: 70px;
-  margin-top: 12px;
 }
 
 .join-word {
@@ -456,7 +455,9 @@ address {
 }
 
 .join-network-link {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   color: #ffffff;
@@ -518,8 +519,12 @@ address {
   margin-left: 30px;
 }
 
-.project-item:hover,
-.project-item:focus {
+.project-item-link {
+  display: block;
+}
+
+.project-item-link:hover,
+.project-item-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
